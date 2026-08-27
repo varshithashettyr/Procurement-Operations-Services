@@ -43,7 +43,6 @@ import {
   BriefcaseBusiness,
   FolderOpen,
   RefreshCw,
-  Workflow,
   Handshake,
   BarChart3,
   LayoutDashboard,
