@@ -17,49 +17,34 @@ import {
 import {
   UserPlus,
   Users,
-  SearchCheck,
-  CalendarCheck,
-  FileText,
+
   ChevronRight,
   ArrowUpRight,
   X,
   ArrowRight,
-  ShieldCheck,
-  UserCheck,
+
   FileCheck,
   ClipboardCheck,
   Database,
-  BookOpen,
-  ListChecks,
-  Monitor,
-  WalletCards,
-  Calculator,
-  Banknote,
-  BadgeDollarSign,
-  FileBarChart,
-  GraduationCap,
-  CalendarDays,
+ 
   ChartNoAxesCombined,
-  BriefcaseBusiness,
-  FolderOpen,
+
   RefreshCw,
-  Handshake,
+ 
   BarChart3,
-  LayoutDashboard,
-  UsersRound,
+
   ShoppingCart,
 PackageCheck,
 Settings2,
 TrendingDown,
-Lightbulb,
+
 Boxes,
 Truck,
 LineChart,
-  Presentation,
-  TrendingUp,
+
 } from "lucide-react";
 
-import { serviceCategories } from "../../data/brickwork";
+// import { serviceCategories } from "../../data/brickwork";
 
 type SubKeyService = {
   name: string;
@@ -82,16 +67,16 @@ const LOGO_COLORS = {
   pink: "#E00070",
 };
 
-function shuffleBrandColors(colors: string[]): string[] {
-  const next = [...colors];
+// function shuffleBrandColors(colors: string[]): string[] {
+//   const next = [...colors];
 
-  for (let index = next.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [next[index], next[swapIndex]] = [next[swapIndex], next[index]];
-  }
+//   for (let index = next.length - 1; index > 0; index -= 1) {
+//     const swapIndex = Math.floor(Math.random() * (index + 1));
+//     [next[index], next[swapIndex]] = [next[swapIndex], next[index]];
+//   }
 
-  return next;
-}
+//   return next;
+// }
 
 function getActiveRingColor(angleDeg: number): string {
   const normalizedAngle = ((angleDeg % 360) + 360) % 360;
@@ -969,12 +954,12 @@ const keyServices: KeyService[] = baseKeyServices.map(
                           activeService ===
                           service.name;
 
-                        const activeSliceColor =
-                          isHovered
-                            ? service.color
-                            : getActiveRingColor(
-                                position.angle
-                              );
+                        // const activeSliceColor =
+                        //   isHovered
+                        //     ? service.color
+                        //     : getActiveRingColor(
+                        //         position.angle
+                        //       );
 
                         const startX =
                           CENTER_XY +

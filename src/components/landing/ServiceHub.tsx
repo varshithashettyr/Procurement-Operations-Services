@@ -57,7 +57,7 @@ export function ServiceHub() {
 
           <g clipPath="url(#coreClip)" stroke="white" fill="none">
             {/* concentric "engine" rings instead of lat/long lines */}
-            {[70, 50, 30].map((r, i) => (
+            {[70, 50, 30].map((r) => (
               <circle
                 key={r}
                 cx="100"
